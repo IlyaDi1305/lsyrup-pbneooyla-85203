@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Безопасный обмен криптовалют по выгодному курсу. Быстрые транзакции, низкие комиссии, поддержка 24/7.">
+    <title>CryptoSwift - Надежный обмен криптовалют</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-icon">₿</span>
+                <span class="logo-text">CryptoSwift</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#calculator" class="nav__link">Калькулятор</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__subtitle" data-aos="fade-up">Обменник криптовалют №1</span>
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                        Обменивайте крипту
+                        <span class="gradient-text">быстро и безопасно</span>
+                    </h1>
+                    <p class="hero__description" data-aos="fade-up" data-aos-delay="200">
+                        Мгновенные обмены более 150 криптовалют по лучшему курсу.
+                        Без скрытых комиссий и длительных проверок.
+                    </p>
+                    <div class="hero__buttons" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#calculator" class="button button-primary">
+                            Начать обмен
+                            <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#services" class="button button-outline">
+                            Узнать больше
+                        </a>
+                    </div>
+                    
+                    <div class="hero__stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <h3 class="stat-number">50K+</h3>
+                            <p class="stat-label">Пользователей</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">150+</h3>
+                            <p class="stat-label">Криптовалют</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">24/7</h3>
+                            <p class="stat-label">Поддержка</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="crypto-card crypto-card-1">
+                        <div class="crypto-icon btc">₿</div>
+                        <div class="crypto-info">
+                            <span class="crypto-name">Bitcoin</span>
+                            <span class="crypto-price">$64,230</span>
+                        </div>
+                        <span class="crypto-change positive">+2.4%</span>
+                    </div>
+                    <div class="crypto-card crypto-card-2">
+                        <div class="crypto-icon eth">Ξ</div>
+                        <div class="crypto-info">
+                            <span class="crypto-name">Ethereum</span>
+                            <span class="crypto-price">$3,420</span>
+                        </div>
+                        <span class="crypto-change positive">+1.8%</span>
+                    </div>
+                    <div class="crypto-card crypto-card-3">
+                        <div class="crypto-icon usdt">₮</div>
+                        <div class="crypto-info">
+                            <span class="crypto-name">Tether</span>
+                            <span class="crypto-price">$1.00</span>
+                        </div>
+                        <span class="crypto-change neutral">0.0%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">Наши преимущества</span>
+                    <h2 class="section__title">Почему выбирают нас</h2>
+                    <p class="section__description">
+                        Мы создали сервис, который объединяет надежность, скорость и удобство
+                    </p>
+                </div>
+
+                <div class="services__container">
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5L25 15H35L27.5 22.5L30 32.5L20 25L10 32.5L12.5 22.5L5 15H15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Лучший курс</h3>
+                        <p class="service-card__description">
+                            Агрегируем курсы с крупнейших бирж для получения наиболее выгодных условий обмена
+                        </p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 10V20L27 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Моментальные сделки</h3>
+                        <p class="service-card__description">
+                            Средняя скорость обмена составляет 5-15 минут. Большинство операций выполняется автоматически
+                        </p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="7" y="12" width="26" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M13 12V9C13 5.68629 15.6863 3 19 3H21C24.3137 3 27 5.68629 27 9V12" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="20" cy="22" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Безопасность</h3>
+                        <p class="service-card__description">
+                            Многоуровневая защита, холодные кошельки и SSL-шифрование всех транзакций
+                        </p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M5 20C5 11.7157 11.7157 5 20 5C28.2843 5 35 11.7157 35 20C35 28.2843 28.2843 35 20 35" stroke="currentColor" stroke-width="2"/>
+                                <path d="M5 20H15M20 35V25M35 20H25M20 5V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">150+ валют</h3>
+                        <p class="service-card__description">
+                            Поддержка всех популярных криптовалют и токенов: BTC, ETH, USDT, BNB, XRP и многие другие
+                        </p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M15 27L10 32M10 32L5 27M10 32V20M25 13L30 8M30 8L35 13M30 8V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Низкие комиссии</h3>
+                        <p class="service-card__description">
+                            Прозрачная система комиссий от 0.1%. Никаких скрытых платежей и дополнительных сборов
+                        </p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="15" r="7" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 32C10 26.4772 14.4772 22 20 22C25.5228 22 30 26.4772 30 32" stroke="currentColor" stroke-width="2"/>
+                                <path d="M28 18L32 14M32 14L36 18M32 14V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Поддержка 24/7</h3>
+                        <p class="service-card__description">
+                            Квалифицированная служба поддержки всегда готова помочь решить любой вопрос
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator section" id="calculator">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">Рассчитайте обмен</span>
+                    <h2 class="section__title">Калькулятор обмена</h2>
+                </div>
+
+                <div class="calculator__container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="calculator__tabs">
+                        <button class="tab-button active" data-tab="exchange">
+                            Обмен криптовалют
+                        </button>
+                        <button class="tab-button" data-tab="fiat">
+                            Покупка за фиат
+                        </button>
+                    </div>
+
+                    <div class="tab-content active" id="exchange-tab">
+                        <form class="exchange-form" id="exchange-form">
+                            <div class="form-group">
+                                <label class="form-label">Отдаете</label>
+                                <div class="input-wrapper">
+                                    <input type="number" class="form-input" id="give-amount" value="1" min="0" step="0.00000001">
+                                    <select class="form-select" id="give-currency">
+                                        <option value="BTC">Bitcoin (BTC)</option>
+                                        <option value="ETH">Ethereum (ETH)</option>
+                                        <option value="USDT" selected>Tether (USDT)</option>
+                                        <option value="BNB">Binance Coin (BNB)</option>
+                                        <option value="XRP">Ripple (XRP)</option>
+                                        <option value="ADA">Cardano (ADA)</option>
+                                        <option value="SOL">Solana (SOL)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="swap-button">
+                                <button type="button" class="swap-icon" id="swap-currencies">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 10L12 15L17 10M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Получаете</label>
+                                <div class="input-wrapper">
+                                    <input type="number" class="form-input" id="receive-amount" value="0.000015" readonly>
+                                    <select class="form-select" id="receive-currency">
+                                        <option value="BTC" selected>Bitcoin (BTC)</option>
+                                        <option value="ETH">Ethereum (ETH)</option>
+                                        <option value="USDT">Tether (USDT)</option>
+                                        <option value="BNB">Binance Coin (BNB)</option>
+                                        <option value="XRP">Ripple (XRP)</option>
+                                        <option value="ADA">Cardano (ADA)</option>
+                                        <option value="SOL">Solana (SOL)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="exchange-info">
+                                <div class="info-row">
+                                    <span>Курс обмена:</span>
+                                    <span class="info-value" id="exchange-rate">1 USDT ≈ 0.000015 BTC</span>
+                                </div>
+                                <div class="info-row">
+                                    <span>Комиссия:</span>
+                                    <span class="info-value">0.1%</span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="button button-primary button-full">
+                                Продолжить обмен
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="tab-content" id="fiat-tab">
+                        <form class="exchange-form">
+                            <div class="form-group">
+                                <label class="form-label">Сумма покупки</label>
+                                <div class="input-wrapper">
+                                    <input type="number" class="form-input" value="10000" min="0">
+                                    <select class="form-select">
+                                        <option value="RUB">Рубли (RUB)</option>
+                                        <option value="USD">Доллары (USD)</option>
+                                        <option value="EUR">Евро (EUR)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Получаете криптовалюту</label>
+                                <div class="input-wrapper">
+                                    <input type="number" class="form-input" value="0.15" readonly>
+                                    <select class="form-select">
+                                        <option value="BTC">Bitcoin (BTC)</option>
+                                        <option value="ETH" selected>Ethereum (ETH)</option>
+                                        <option value="USDT">Tether (USDT)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="payment-methods">
+                                <p class="form-label">Способ оплаты:</p>
+                                <div class="methods-grid">
+                                    <label class="method-card">
+                                        <input type="radio" name="payment" value="card" checked>
+                                        <span class="method-label">Банковская карта</span>
+                                    </label>
+                                    <label class="method-card">
+                                        <input type="radio" name="payment" value="sbp">
+                                        <span class="method-label">СБП</span>
+                                    </label>
+                                    <label class="method-card">
+                                        <input type="radio" name="payment" value="qiwi">
+                                        <span class="method-label">QIWI</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="button button-primary button-full">
+                                Купить криптовалюту
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="calculator__features" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Фиксированный курс на 15 минут</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Обмен за 5-15 минут</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15V3M12 15L8 11M12 15L16 11M2 17L2.621 19.485C2.72915 19.9177 3.07277 20.2374 3.51014 20.3293L6 21M22 17L21.379 19.485C21.2708 19.9177 20.9272 20.2374 20.4899 20.3293L18 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Без регистрации и KYC</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">Отзывы клиентов</span>
+                    <h2 class="section__title">Что говорят о нас</h2>
+                </div>
+
+                <div class="reviews__container">
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review-header">
+                            <div class="review-avatar">АМ</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Алексей Михайлов</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Пользуюсь уже больше года. Самые выгодные курсы на рынке, обмен происходит действительно быстро. 
+                            Особенно радует, что не нужно проходить верификацию для небольших сумм.
+                        </p>
+                        <time class="review-date">2 недели назад</time>
+                    </article>
+
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="review-header">
+                            <div class="review-avatar">ЕС</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Елена Соколова</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Отличный сервис! Первый раз было страшновато, но поддержка быстро ответила на все вопросы. 
+                            Обмен прошел за 10 минут, курс зафиксировался как обещали. Рекомендую!
+                        </p>
+                        <time class="review-date">1 месяц назад</time>
+                    </article>
+
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review-header">
+                            <div class="review-avatar">ДП</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Дмитрий Петров</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Меняю здесь крипту регулярно. Удобный интерфейс, понятный даже новичку. 
+                            Комиссии действительно минимальные. За все время ни разу не было проблем.
+                        </p>
+                        <time class="review-date">3 недели назад</time>
+                    </article>
+
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review-header">
+                            <div class="review-avatar">МК</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Мария Козлова</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Впечатлена скоростью работы! Ожидала, что придется ждать часами, но средства пришли буквально через 7 минут. 
+                            Курс был лучше, чем у конкурентов на момент обмена.
+                        </p>
+                        <time class="review-date">5 дней назад</time>
+                    </article>
+
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="review-header">
+                            <div class="review-avatar">ИВ</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Игорь Волков</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Профессиональный подход к делу. Прозрачная система комиссий, нет скрытых платежей. 
+                            Техподдержка реально работает 24/7 - проверял в 3 ночи, ответили за 2 минуты.
+                        </p>
+                        <time class="review-date">2 месяца назад</time>
+                    </article>
+
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review-header">
+                            <div class="review-avatar">АН</div>
+                            <div class="review-author">
+                                <h4 class="author-name">Анна Новикова</h4>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Надежный обменник с хорошей репутацией. Пользуюсь по рекомендации друга. 
+                            Большой выбор валют, удобный калькулятор. Все четко и без обмана.
+                        </p>
+                        <time class="review-date">1 неделю назад</time>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq section">
+            <div class="container">
+                <div class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">Часто задаваемые вопросы</span>
+                    <h2 class="section__title">Ответы на вопросы</h2>
+                </div>
+
+                <div class="faq__container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Как быстро происходит обмен?</span>
+                            <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                В среднем обмен занимает от 5 до 15 минут. Большинство операций выполняется автоматически. 
+                                Скорость зависит от загруженности блокчейна и количества подтверждений, необходимых для конкретной криптовалюты.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Нужна ли регистрация для обмена?</span>
+                            <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Для обменов до 50,000 рублей регистрация не требуется. Для более крупных сумм мы просим пройти 
+                                упрощенную верификацию в соответствии с требованиями законодательства.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Какие комиссии взимаются за обмен?</span>
+                            <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Наша комиссия составляет всего 0.1-0.5% в зависимости от валютной пары. 
+                                Все комиссии отображаются в калькуляторе до начала обмена. Скрытых платежей нет.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Насколько безопасен обмен?</span>
+                            <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Мы используем многоуровневую систему безопасности: SSL-шифрование, холодные кошельки для хранения 
+                                основных средств, двухфакторная аутентификация. Все транзакции проходят автоматическую проверку на безопасность.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Что делать, если возникла проблема?</span>
+                            <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Наша служба поддержки работает 24/7 без выходных. Вы можете связаться с нами через чат на сайте, 
+                                Telegram или электронную почту. Среднее время ответа - 2-5 минут.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__container">
+                    <div class="contact__info" data-aos="fade-right">
+                        <span class="section__subtitle">Свяжитесь с нами</span>
+                        <h2 class="section__title">Остались вопросы?</h2>
+                        <p class="contact__description">
+                            Наша команда готова помочь вам 24/7. Выберите удобный способ связи.
+                        </p>
+
+                        <div class="contact__methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 15.4606V18.4606C21.0008 18.7461 20.9383 19.0283 20.8172 19.2866C20.6962 19.5449 20.5195 19.7727 20.3 19.9536C20.0806 20.1345 19.8242 20.2638 19.5496 20.3324C19.275 20.401 18.9888 20.4072 18.7117 20.3505C15.6313 19.8177 12.7238 18.5861 10.2117 16.7505C7.87229 15.0785 5.92927 12.9255 4.51624 10.4505C2.68339 7.86669 1.47355 4.86635 1.00178 1.69056C0.945025 1.40144 0.950769 1.10271 1.01858 0.815958C1.08639 0.529209 1.21392 0.260523 1.3925 0.0291677C1.57107 -0.202187 1.79569 -0.385433 2.05085 -0.515111C2.30602 -0.644788 2.58551 -0.717712 2.86958 -0.729443H5.70178C6.19142 -0.734488 6.66646 -0.556175 7.03793 -0.228657C7.40939 0.0988617 7.65252 0.503293 7.72287 0.950557C7.85328 1.84457 8.08091 2.72101 8.40178 3.56556C8.54034 3.95357 8.5667 4.37331 8.47777 4.77634C8.38884 5.17937 8.18845 5.54797 7.90178 5.84056L6.67287 7.12056C8.20558 9.59665 10.3494 11.7906 12.7602 13.3705L13.9891 12.0905C14.2731 11.7936 14.6315 11.5854 15.0227 11.4926C15.4139 11.3998 15.8211 11.4264 16.1987 11.5705C17.0136 11.9004 17.8592 12.1346 18.7226 12.2685C19.1782 12.3407 19.5903 12.5919 19.8648 12.9727C20.1393 13.3535 20.2558 13.8349 20.1907 14.3105L21 15.4606Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Телефон</h4>
+                                    <p>+7 (495) 123-45-67</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>support@cryptoswift.ru</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Telegram</h4>
+                                    <p>@CryptoSwiftSupport</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Режим работы</h4>
+                                    <p>Круглосуточно, без выходных</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form" data-aos="fade-left">
+                        <h3 class="form-title">Напишите нам</h3>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Тема сообщения</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Выберите тему</option>
+                                <option value="support">Техническая поддержка</option>
+                                <option value="exchange">Вопрос по обмену</option>
+                                <option value="partnership">Партнерство</option>
+                                <option value="other">Другое</option>
+                            </select>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <button type="submit" class="button button-primary button-full">
+                            Отправить сообщение
+                        </button>
+
+                        <div class="form-success" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <a href="#" class="footer__logo">
+                        <span class="logo-icon">₿</span>
+                        <span class="logo-text">CryptoSwift</span>
+                    </a>
+                    <p class="footer__description">
+                        Надежный сервис обмена криптовалют с 2020 года. 
+                        Более 50,000 довольных клиентов по всему миру.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm4.685 6.832l-1.697 8.003c-.128.565-.458.704-.927.438l-2.562-1.888-1.235 1.189c-.137.137-.251.251-.514.251l.183-2.604 4.745-4.287c.206-.183-.045-.285-.32-.102L6.745 11.22l-2.529-.791c-.55-.171-.561-.55.114-.814l9.881-3.807c.458-.171.858.102.709.814z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M19.615 5.481c-.231-.855-.905-1.528-1.76-1.759C16.299 3.333 10 3.333 10 3.333s-6.299 0-7.855.389c-.855.231-1.529.904-1.76 1.759C0 7.038 0 10.333 0 10.333s0 3.295.385 4.852c.231.855.905 1.528 1.76 1.759 1.556.389 7.855.389 7.855.389s6.299 0 7.855-.389c.855-.231 1.529-.904 1.76-1.759C20 13.628 20 10.333 20 10.333s0-3.295-.385-4.852zM8 13.333V7.333l5.231 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Компания</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">О нас</a></li>
+                        <li><a href="#services">Преимущества</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__links">
+                        <li><a href="#calculator">Обмен криптовалют</a></li>
+                        <li><a href="#calculator">Покупка за рубли</a></li>
+                        <li><a href="#">API для бизнеса</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Поддержка</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Центр помощи</a></li>
+                        <li><a href="#">Как сделать обмен</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 CryptoSwift. Все права защищены.
+                </p>
+                <div class="footer__payments">
+                    <span>Принимаем:</span>
+                    <div class="payment-icons">
+                        <span class="payment-icon">₿</span>
+                        <span class="payment-icon">Ξ</span>
+                        <span class="payment-icon">₮</span>
+                        <span class="payment-icon">+150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
