@@ -10,10 +10,10 @@
     --text-secondary: #64748b;
     --text-light: #94a3b8;
     
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
+    --bg-primary: #f1f5f9;
+    --bg-secondary: #e2e8f0;
     --bg-dark: #0f172a;
-    --bg-card: #ffffff;
+    --bg-card: #f8fafc;
     
     --border-color: #e2e8f0;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -266,7 +266,7 @@ ul {
 .hero {
     padding-top: calc(var(--header-height) + 4rem);
     padding-bottom: 6rem;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #e2e8f0 0%, #f1f5f9 100%);
     position: relative;
     overflow: hidden;
 }
@@ -360,7 +360,7 @@ ul {
 
 .crypto-card {
     position: absolute;
-    background: white;
+    background: var(--bg-card);
     border-radius: 1rem;
     padding: 1.25rem;
     box-shadow: var(--shadow-lg);
@@ -555,7 +555,7 @@ ul {
 }
 
 .tab-button.active {
-    background: white;
+    background: var(--bg-card);
     color: var(--primary-color);
     box-shadow: var(--shadow-sm);
 }
@@ -600,7 +600,7 @@ ul {
     font-size: 1rem;
     font-family: inherit;
     transition: var(--transition-base);
-    background: white;
+    background: var(--bg-card);
 }
 
 .form-input {
@@ -634,7 +634,7 @@ ul {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: white;
+    background: var(--bg-card);
     border: 2px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -807,7 +807,7 @@ ul {
 }
 
 .faq {
-    background: white;
+    background: var(--bg-primary);
 }
 
 .faq__container {
@@ -838,7 +838,7 @@ ul {
     color: var(--text-primary);
     cursor: pointer;
     transition: var(--transition-base);
-    background: white;
+    background: var(--bg-card);
     text-align: left;
 }
 
@@ -873,7 +873,7 @@ ul {
 }
 
 .contact {
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #e2e8f0 0%, #f1f5f9 100%);
 }
 
 .contact__container {
@@ -1162,7 +1162,7 @@ ul {
         right: -100%;
         width: 75%;
         height: 100vh;
-        background: white;
+        background: var(--bg-primary);
         padding: 6rem 2rem 2rem;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         transition: var(--transition-base);
